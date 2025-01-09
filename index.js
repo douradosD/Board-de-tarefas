@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Criar container da lista de tarefas
     const taskListContainer = document.createElement('div');
     taskListContainer.classList.add('task-list-container');
-    taskListContainer.style.display = 'none';
     mainSection.appendChild(taskListContainer);
 
     // Criar input para novas tarefas

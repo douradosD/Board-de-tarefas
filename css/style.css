@@ -64,6 +64,10 @@ div {
     padding: 0.5rem;
 }
 
+.task-list-container {
+    display: none;
+}
+
 .task-list {
     position: absolute;
     left: 140px;
