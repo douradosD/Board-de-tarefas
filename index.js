@@ -13,16 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.createElement('input');
     taskInput.type = 'text';
     taskInput.placeholder = 'Digite uma nova tarefa...';
-    taskInput.style.cssText = `
-        width: 20rem;
-        height: 2.5rem;
-        border: solid 2px;
-        border-radius: 3rem;
-        padding: 0 1rem;
-        
-        font-size: 20px;
-        margin-bottom: 1rem;
-    `;
+    taskInput.classList.add('taskinput')
+   
     taskListContainer.appendChild(taskInput);
 
     // Criar lista de tarefas
@@ -39,23 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
         tasks.forEach((task, index) => {
             const taskItem = document.createElement('div');
             taskItem.classList.add('task-item');
-            taskItem.style.cssText = `
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                padding: 0.5rem;
-                background-color: ${task.completed ? '#f0f0f0' : 'white'};
-                border: 1px solid #ddd;
-                border-radius: 0.5rem;
-                margin-bottom: 0.5rem;
-            `;
+           
 
             // Checkbox para marcar como concluída
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.checked = task.completed;
-            checkbox.style.width = '1.2rem';
-            checkbox.style.height = '1.2rem';
+           
+            checkbox.classList.add('custom-checkbox')
 
             // Texto da tarefa
             const taskText = document.createElement('span');

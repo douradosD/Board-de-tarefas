@@ -17,6 +17,7 @@ body {
     gap: 1rem;
 }
 
+
 header {
     font-weight: 700;
     font-size: 7rem;
@@ -41,6 +42,44 @@ footer {
 
 footer>img {
     margin-bottom: 3rem;
+}
+
+input {
+    width: 20rem;
+    height: 2.3rem;
+    border: solid 2px;
+    border-radius: 3rem;
+    padding: 0 1rem;
+
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.task-list {
+    position: absolute;
+    left: 140px;
+    
+}
+
+.custom-checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    accent-color: rgba(41, 50, 109, 0.83);
 }
 
 @media (max-width: 768px) {
