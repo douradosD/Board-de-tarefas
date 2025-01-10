@@ -71,7 +71,7 @@ div {
 .task-list {
     position: absolute;
     left: 140px;
-    
+
 }
 
 .custom-checkbox {
@@ -154,9 +154,4 @@ div {
         margin-bottom: 1.5rem;
     }
 
-    .task-list {
-       display: none;
-       margin-left: 140px;
-    }
-    
 }
