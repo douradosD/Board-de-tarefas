@@ -153,4 +153,10 @@ div {
     footer>img {
         margin-bottom: 1.5rem;
     }
+
+    .task-list {
+       display: none;
+       margin-left: 140px;
+    }
+    
 }
